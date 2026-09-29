@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مطعم النور - مأكولات شهية وتجربة طعام مميزة">
+    <title>مطعم النور | تجربة طعام لا تُنسى</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header" id="top">
+    <nav class="navbar container">
+        <a class="logo" href="#home"><span>🍽️</span> مطعم النور</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#menu">القائمة</a></li>
+            <li><a href="#about">قصتنا</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <span class="eyebrow">نكهات أصيلة • مكونات طازجة</span>
+            <h1>أهلاً بك في <strong>مطعم النور</strong></h1>
+            <p>نحضّر لك أطباقًا شهية بعناية، لتعيش تجربة طعام تستحق أن تتكرر.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary">استكشف القائمة</a>
+                <a href="#contact" class="btn btn-outline">تواصل معنا</a>
+            </div>
+            <div class="hero-stats">
+                <div><strong>15+</strong><span>سنة خبرة</span></div>
+                <div><strong>100%</strong><span>مكونات مختارة</span></div>
+                <div><strong>4.9/5</strong><span>تقييم ضيوفنا</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu section">
+        <div class="container">
+            <div class="section-heading">
+                <span>قائمتنا</span>
+                <h2>أطباق يحبها الجميع</h2>
+                <p>اختر طبقك المفضل واستمتع بمذاق يُحضّر لك بعناية.</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="main">أطباق رئيسية</button>
+                <button class="filter-btn" data-filter="side">مقبلات</button>
+                <button class="filter-btn" data-filter="dessert">حلويات</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="menu-item" data-category="main">
+                    <div class="item-image">🍕<span>الأكثر طلبًا</span></div>
+                    <div class="item-body">
+                        <div class="item-title"><h3>بيتزا إيطالية</h3><b>45 دج</b></div>
+                        <p>عجينة رقيقة، موزاريلا وصوص طماطم طازج.</p>
+                        <button class="order-btn" data-item="بيتزا إيطالية">اطلب هذا الطبق</button>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="main">
+                    <div class="item-image">🍔</div>
+                    <div class="item-body">
+                        <div class="item-title"><h3>برجر كلاسيك</h3><b>35 دج</b></div>
+                        <p>لحم مشوي، خضار طازجة وصوص خاص من المطعم.</p>
+                        <button class="order-btn" data-item="برجر كلاسيك">اطلب هذا الطبق</button>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="main">
+                    <div class="item-image">🍝</div>
+                    <div class="item-body">
+                        <div class="item-title"><h3>باستا كاربونارا</h3><b>40 دج</b></div>
+                        <p>معكرونة إيطالية بصوص كريمي غني ولمسة مميزة.</p>
+                        <button class="order-btn" data-item="باستا كاربونارا">اطلب هذا الطبق</button>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="side">
+                    <div class="item-image">🥗</div>
+                    <div class="item-body">
+                        <div class="item-title"><h3>سلطة سيزر</h3><b>28 دج</b></div>
+                        <p>خس طازج، دجاج مشوي وصوص سيزر.</p>
+                        <button class="order-btn" data-item="سلطة سيزر">اطلب هذا الطبق</button>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="main">
+                    <div class="item-image">🍗<span>جديد</span></div>
+                    <div class="item-body">
+                        <div class="item-title"><h3>دجاج مشوي</h3><b>50 دج</b></div>
+                        <p>دجاج متبل بالأعشاب مع خضار مشوية.</p>
+                        <button class="order-btn" data-item="دجاج مشوي">اطلب هذا الطبق</button>
+                    </div>
+                </article>
+
+                <article class="menu-item" data-category="dessert">
+                    <div class="item-image">🍰</div>
+                    <div class="item-body">
+                        <div class="item-title"><h3>تشيز كيك</h3><b>25 دج</b></div>
+                        <p>حلوى كريمية ناعمة مع توت طازج.</p>
+                        <button class="order-btn" data-item="تشيز كيك">اطلب هذا الطبق</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container about-grid">
+            <div class="about-card">
+                <span class="about-number">2010</span>
+                <p>منذ ذلك العام ونحن نهتم بأن تكون كل زيارة لمطعم النور تجربة مميزة.</p>
+            </div>
+
+            <div class="about-content">
+                <span class="section-kicker">قصتنا</span>
+                <h2>الطعم الذي يجمع الناس</h2>
+                <p>نؤمن أن المطعم ليس مجرد مكان لتناول الطعام، بل مساحة للقاء والضحك وصناعة الذكريات. لذلك نختار مكوناتنا بعناية ونحضّر أطباقنا بروح بسيطة واهتمام كبير بالتفاصيل.</p>
+
+                <div class="features">
+                    <div class="feature"><span>⭐</span><div><h4>جودة عالية</h4><p>مكونات طازجة ومختارة بعناية.</p></div></div>
+                    <div class="feature"><span>🚚</span><div><h4>توصيل سريع</h4><p>نجهز طلبك بأسرع وقت ممكن.</p></div></div>
+                    <div class="feature"><span>👨‍🍳</span><div><h4>طهاة محترفون</h4><p>خبرة طويلة وشغف بالطبخ.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-heading">
+                <span>نحن هنا من أجلك</span>
+                <h2>تواصل معنا</h2>
+                <p>للاستفسار أو الحجز، ستجد معلومات التواصل هنا.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="info-item"><span>📍</span><h4>العنوان</h4><p>أضف عنوان المطعم هنا</p></div>
+                <div class="info-item"><span>📞</span><h4>الهاتف</h4><p>أضف رقم الهاتف هنا</p></div>
+                <div class="info-item"><span>⏰</span><h4>ساعات العمل</h4><p>يوميًا من 12:00 إلى 00:00</p></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div><strong>🍽️ مطعم النور</strong><p>نكهة تستحق العودة.</p></div>
+        <a href="#top">↑ العودة للأعلى</a>
+    </div>
+    <p class="copyright">© 2026 مطعم النور. جميع الحقوق محفوظة.</p>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
